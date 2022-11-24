@@ -4,6 +4,7 @@
 
 let contenedor = document.querySelector('#contenedor');
 
+document.addEventListener('DOMContentLoaded', peticion)
 
 const options = {
 	method: 'GET',
@@ -14,13 +15,22 @@ const options = {
 };
 async function peticion (){
    
-   
-   const respuesta = await fetch('https://covid-193.p.rapidapi.com/statistics?country=mexico', options)
-	.then(respuesta => respuesta.json())
-	.then(respuesta => console.log(respuesta))
-	.catch(error => console.error(error));
+   	const response = await fetch('https://covid-193.p.rapidapi.com/statistics?country=mexico', options)
+	   .then(response => response.json())
+	   .then(response => console.log(response))
+	   .catch(err => console.error(err));
+    
+	   console.log(response.result)
+	
+	   contenedor.innerHTML= `
+	
+	
+	
+	
+	
+	`
 
-    contenedor.innerHTML = JSON.stringify(respuesta)
+	
 }
 
 
