@@ -35,3 +35,6 @@ async function peticion (){
 
 
    
+
+
+//colocar aca todos los exportar para config.js
