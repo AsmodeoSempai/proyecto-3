@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/AsmodeoSempai/proyecto-3#readme",
   "dependencies": {
+    "chart.js": "^4.0.1",
     "proyecto": "^1.0.3"
   }
 }
