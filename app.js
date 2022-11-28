@@ -37,4 +37,8 @@ async function peticion (){
    
 
 
-//colocar aca todos los exportar para config.js
+//Chart.js codigo
+
+var ctx = document.getElementById('#Chart').getContext('2d');
+
+
